@@ -2,8 +2,7 @@
     "name": "Polyrosary",
     "description": "",
     "dependencies": {
-        "device": "*",
-        "browser-events": "*"
+        "device": "*"
     },
     "files": [
         "main.ts",

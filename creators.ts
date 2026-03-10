@@ -3,7 +3,7 @@
  * Polyrosary blocks
  */
 //% weight=75 color=#802170 icon="\uf007"
-namespace loaders {
+namespace polyrosary {
 
     /**
      * Runs a function after a given number reaches zero.

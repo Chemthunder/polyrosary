@@ -114,8 +114,3 @@ class WhileInputHeldLoader {
         }
     }
 }
-
-
-// on variable changed
-
-// on created sprite of any kind
