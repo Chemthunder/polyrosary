@@ -9,7 +9,8 @@
         "main.ts",
         "README.md",
         "assets.json",
-        "polyrosary.ts"
+        "polyrosary.ts",
+        "creators.ts"
     ],
     "testFiles": [
         "test.ts"

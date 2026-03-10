@@ -1,5 +1,6 @@
 /*
-Multiple
+Multiple // // // //
+
 Tick events, a loader system that will run a function at an interval
 loader can run 'bootstrap' and begin ticking its function at the interval.
 */
@@ -114,21 +115,7 @@ class WhileInputHeldLoader {
     }
 }
 
+
 // on variable changed
 
 // on created sprite of any kind
-
-
-let test = new TickingLoader(40, testLoad);
-test.bootstrap();
-
-function testLoad() {
-    // console.log("did the thing")
-}
-
-let inputTest = new WhileInputHeldLoader(controller.A, secondLoad)
-inputTest.bootstrap();
-
-function secondLoad() {
-    console.log("Did the thing AGAIN oml")
-}
