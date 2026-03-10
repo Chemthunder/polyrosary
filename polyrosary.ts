@@ -114,3 +114,32 @@ class WhileInputHeldLoader {
         }
     }
 }
+
+class OnGamePausedLoader {
+    _event: Function;
+
+    constructor(event: Function) {
+        this._event = event;
+    }
+
+    get event(): Function {
+        return this._event;
+    }
+
+    set event(input: Function) {
+        this.event = input;
+    }
+
+    bootstrap() {
+        try {
+            forever(function () {
+                let event = this.event;
+                if (scene.systemMenu.isVisible) {
+                    event();
+                }
+            });
+        } catch {
+            control.fail("Null");
+        }
+    }
+}
