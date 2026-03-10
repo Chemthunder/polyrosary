@@ -17,3 +17,10 @@ let sprit = sprites.create(img`
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
     3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3
 `, SpriteKind.Player);
+
+let gamePausedEvent = new OnGamePausedLoader(gamePausedShenanigans);
+gamePausedEvent.bootstrap();
+
+function gamePausedShenanigans() {
+    console.log("a");
+}

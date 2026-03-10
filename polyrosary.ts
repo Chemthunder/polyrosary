@@ -134,12 +134,12 @@ class OnGamePausedLoader {
         try {
             forever(function () {
                 let event = this.event;
-                if (scene.systemMenu.isVisible) {
+                if (!scene.systemMenu.isVisible) {
                     event();
                 }
             });
         } catch {
-            control.fail("Null");
+            control.fail("Loader is null.");
         }
     }
 }
